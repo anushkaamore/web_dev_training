@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+           height: 10px; 
+           width: 10px;
+           background-color: yellow;
+           border: 1px solid;
+           border-radius: 4%;
+           animation-name: slider;
+           animation-duration: 7s;
+           animation-iteration-count: infinite;
+        }
+        @keyframes slider {
+            from{
+              width: 10px;
+            }
+            to{
+              width:100%;
+              background-color: red;
+            }
+            
+        }
+        #d2{
+            margin-top: 50px;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 5px dotted;
+            animation: bulb 3s infinite;
+        }
+        @keyframes bulb {
+            0%{
+              background-color: yellow;
+            }
+            25%{
+                background-color: green;
+            }
+            50%{
+                 background-color: red;
+            }
+            75%{
+                background-color: blue;
+            }
+            100%{
+                 background-color: violet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+</body>
+</html>

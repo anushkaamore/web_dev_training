@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid green;
+            display:flex;
+        }
+        .items{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+         .container1{
+            border: 2px solid green;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .items1{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+         .container2{
+            height: 400px;
+            border: 2px solid green;
+            display: flex;
+           flex-wrap: wrap-reverse;
+           align-content: space-around;
+        
+        }
+        .items2{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+
+        }
+         .container3{
+            height: 600px;
+            border: 2px solid green;
+            display: flex;
+           flex-flow: column wrap;
+           align-content: center;
+           
+        }
+        .items3{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+         .container4{
+            border: 2px solid green;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .items4{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+         .container5{
+            height: 200px;
+            border: 2px solid green;
+            display: flex;
+           align-items: baseline;
+           
+        }
+        .items5{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1 id="h1">display flex, inline flex</h1>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+
+     <h1 id="h2">flex direction</h1>
+    <div class="container1">
+        <div class="items1">1</div>
+        <div class="items1">2</div>
+        <div class="items1">3</div>
+        <div class="items1">4</div>
+    </div>
+
+    <h1 id="h2">flex wrap , align content </h1>
+    <div class="container2">
+        <div class="items2">1</div>
+        <div class="items2">2</div>
+        <div class="items2">3</div>
+        <div class="items2">4</div>
+        <div class="items2">5</div>
+        <div class="items2">6</div>
+        <div class="items2">7</div>
+        <div class="items2">8</div>
+         <div class="items2">9</div>
+        <div class="items2">10</div>
+        <div class="items2">11</div>
+        <div class="items2">12</div>
+    </div>
+
+    <h1 id="h2">flex flow : flex direction flex wrap</h1>
+    <div class="container3">
+        <div class="items3">1</div>
+        <div class="items3">2</div>
+        <div class="items3">3</div>
+        <div class="items3">4</div>
+        <div class="items3">5</div>
+        <div class="items3">6</div>
+        <div class="items3">7</div>
+        <div class="items3">8</div>
+         <div class="items3">9</div>
+        <div class="items3">10</div>
+        <div class="items3">11</div>
+        <div class="items3">12</div>
+    </div>
+      
+     
+    <h1 id="h1">justify content</h1>
+    <div class="container4">
+        <div class="items4">1</div>
+        <div class="items4">2</div>
+        <div class="items4">3</div>
+        <div class="items4">4</div>
+    </div>
+
+     <h1 id="h1">align items</h1>
+    <div class="container5">
+        <div class="items5">1</div>
+        <div class="items5" style="margin-top: 10px;">2</div>
+        <div class="items5">3</div>
+        <div class="items5">4</div>
+    </div>
+
+     <h1 id="h1">order</h1>
+    <div class="container">
+        <div class="items" style="order: 4;">1</div>
+        <div class="items" style="order: 3;" >2</div>
+        <div class="items" style="order: 2;">3</div>
+        <div class="items">4</div>
+    </div>
+
+    <h1 id="h1">flex grow</h1>
+    <div class="container">
+        <div class="items" style="flex-grow: 1;">1</div>
+        <div class="items" style="flex-grow: 3;">2</div>
+        <div class="items" style="">3</div>
+        <div class="items" style="flex-grow: 2;">4</div>
+    </div>
+  
+     <h1 id="h1">flex shrink and flex basis</h1>
+    <div class="container" style="flex-direction: column;">
+        <div class="items" style="flex-shrink:0;">1</div>
+        <div class="items" style="flex-shrink:2;">2</div>
+        <div class="items" style=" flex-basis: 200px;">3</div>
+        <div class="items" style="flex-basis: 250px;">4</div>
+    </div>
+
+    <h1 id="h1">align self</h1>
+    <div class="container" style="height: 200px;">
+        <div class="items">1</div>
+        <div class="items" style="align-self: end;">2</div>
+        <div class="items">3</div>
+        <div class="items" style="align-self: end;">4</div>
+    </div>
+
+    <div style="height: 400px; width: 400px; background-color: yellow; display: flex;  justify-content: center; align-items: center;">
+        <div style="height: 100px; width: 100px; background-color: red;"></div>
+    </div>
+
+</body>
+</html>
